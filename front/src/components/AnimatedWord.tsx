@@ -1,20 +1,27 @@
-import {useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import anime from "animejs/lib/anime.es.js";
-import styles from "../assets/css/Home.module.css";
+import styles from "../assets/css/AnimatedWord.module.css";
 
 export default function AnimatedWord() {
+    const [isAnimatingIn, setIsAnimatingIn] = useState(false)
+    const [calledOut, setCalledOut] = useState(false)
+    const [animOpened, setAnimOpened] = useState(false)
     const titleRef = useRef(null);
     const lettersRef = useRef([]);
 
-    function handleMouseEnter() {
-        animIn();
-    }
+    // console.log("isAnimatingIn" + isAnimatingIn)
+    // console.log("calledOut" + calledOut)
+    // console.log("animOpened" + isAnimatingIn)
 
-    function handleMouseLeave() {
+    const handleLetters = () => {
+       animIn()
+    };
+
+    const handleHello = ()=>{
         animOut()
     }
 
-    function animIn() {
+    const animIn = () => {
         anime({
             targets: lettersRef.current,
             translateX: function () {
@@ -29,30 +36,30 @@ export default function AnimatedWord() {
             rotate: function () {
                 return anime.random(-250, 250);
             },
-            easing: "easeOutCirc",
+            easing: 'easeOutCirc',
             duration: 750,
         });
-    }
+    };
 
-    function animOut() {
+    const animOut = () => {
         anime({
             targets: "h1 span",
             translateX: 0,
             translateY: 0,
             translateZ: 0,
             rotate: 0,
-            easing: "easeInQuad",
+            easing: 'easeInQuad',
             duration: 750
-        })
-    }
+        });
+    };
+
 
     return (
         <div className={styles.home_title_container}>
-            <h1
-                className={styles.dev_title}
+            <h1 className={styles.dev_title}
                 ref={titleRef}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                onMouseEnter={handleLetters}
+                onMouseLeave={handleHello}
             >
                 <span ref={(el) => (lettersRef.current[0] = el)}>G</span>
                 <span ref={(el) => (lettersRef.current[1] = el)}>R</span>

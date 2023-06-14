@@ -1,12 +1,20 @@
-import {useScroll, useTransform} from "framer-motion";
 import styles from "../assets/css/Home.module.css";
+import {motion} from "framer-motion";
+import {animationOne, transition} from "../animations";
 import Dog from "../assets/images/dog.png";
 import Button from "./Button.tsx";
 
 export default function Home() {
     return (
-        <div className={styles.header}>
-            <img className={styles.background} src={Dog} alt="sky with stars"/>
+        <motion.div
+            initial="out"
+            animate="in"
+            exit="out"
+            variants={animationOne}
+            transition={transition}
+            className={styles.header}
+        >
+            <img className={styles.background} src={Dog} alt="husky"/>
             <div className={styles.titleContainer}>
                 <h1>Developpeur web</h1>
                 <h2>Frontend</h2>
@@ -20,6 +28,6 @@ export default function Home() {
                 </p>
                 <Button variant="primary">Contactez moi</Button>
             </div>
-        </div>
+        </motion.div>
     )
 }

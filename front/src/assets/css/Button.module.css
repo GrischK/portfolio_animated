@@ -9,4 +9,5 @@
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    font-family: var(--font-secondary);
 }

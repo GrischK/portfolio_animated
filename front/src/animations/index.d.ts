@@ -9,7 +9,13 @@ export const animationOne: {
 
 export const transition: {
     duration: number;
+    delay: number;
 };
+
+export const transitionNavBarLine: {
+    delay: number;
+    duration: number;
+}
 
 export const animationTextOne: {
     textIn: {

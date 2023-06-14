@@ -12,6 +12,11 @@ export const transition = {
     duration: 0.6
 }
 
+export const transitionNavBarLine = {
+    delay: 0.5,
+    duration: 0.5
+}
+
 export const animationTextOne = {
     textIn: {
         x: 0

@@ -1,5 +1,5 @@
 import './App.css'
-import Home from "./components/Home.tsx";
+import Home from "./pages/Home.tsx";
 import Layout from "./components/Layout.tsx";
 import {AnimatePresence} from "framer-motion";
 

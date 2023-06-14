@@ -28,3 +28,12 @@ export const animationTextTwo: {
         opacity: number;
     };
 };
+
+export const animationLine = {
+    in: {
+        width: number
+    },
+    out: {
+        width: toString()
+    },
+}

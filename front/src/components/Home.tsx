@@ -6,15 +6,17 @@ import Button from "./Button.tsx";
 
 export default function Home() {
     return (
-        <motion.div
-            initial="out"
-            animate="in"
-            exit="out"
-            variants={animationOne}
-            transition={transition}
-            className={styles.header}
+        <div
+            className={styles.hero}
         >
-            <img className={styles.background} src={Dog} alt="husky"/>
+            <motion.img
+                initial="out"
+                animate="in"
+                exit="out"
+                variants={animationOne}
+                transition={transition}
+                className={styles.background} src={Dog} alt="husky"
+            />
             <div className={styles.titleContainer}>
                 <h1>Developpeur web</h1>
                 <h2>Frontend</h2>
@@ -28,6 +30,6 @@ export default function Home() {
                 </p>
                 <Button variant="primary">Contactez moi</Button>
             </div>
-        </motion.div>
+        </div>
     )
 }

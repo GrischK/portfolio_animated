@@ -1,4 +1,4 @@
-.header {
+.hero {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -13,7 +13,7 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    opacity: 1
+    filter: contrast(125%);
 }
 
 .titleContainer {
@@ -33,7 +33,6 @@
 }
 
 .home_text {
-
     font-family: var(--font-secondary);
     text-transform: uppercase;
 }

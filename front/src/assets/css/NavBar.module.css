@@ -2,10 +2,38 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    width: 100%;
+    left: 28px;
+    right: 28px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+/*.nav_bar::after{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 1px;*/
+/*    background-color: white;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+.nav_bar_line {
+    position: absolute;
+    bottom: 0;
+    /*left: 50%;*/
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.nav_bar_text {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 .nav_bar ul {
@@ -15,9 +43,18 @@
     padding: 12px;
 }
 
-.nav_bar ul > li {
+.nav_bar ul > li, .nav_bar h4 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-family: var(--font-secondary);
     cursor: pointer;
+}
+
+.nav_bar a {
+    color: #e55942;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    text-decoration: none;
 }

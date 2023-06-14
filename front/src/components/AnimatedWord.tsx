@@ -1,23 +1,16 @@
-import {useEffect, useRef, useState} from "react";
+import {useRef} from "react";
 import anime from "animejs/lib/anime.es.js";
 import styles from "../assets/css/AnimatedWord.module.css";
 
 export default function AnimatedWord() {
-    const [isAnimatingIn, setIsAnimatingIn] = useState(false)
-    const [calledOut, setCalledOut] = useState(false)
-    const [animOpened, setAnimOpened] = useState(false)
     const titleRef = useRef(null);
     const lettersRef = useRef([]);
 
-    // console.log("isAnimatingIn" + isAnimatingIn)
-    // console.log("calledOut" + calledOut)
-    // console.log("animOpened" + isAnimatingIn)
-
     const handleLetters = () => {
-       animIn()
+        animIn()
     };
 
-    const handleHello = ()=>{
+    const handleHello = () => {
         animOut()
     }
 

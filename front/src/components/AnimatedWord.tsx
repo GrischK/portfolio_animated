@@ -3,8 +3,9 @@ import anime from "animejs/lib/anime.es.js";
 import styles from "../assets/css/AnimatedWord.module.css";
 
 export default function AnimatedWord() {
-    const titleRef = useRef(null);
-    const lettersRef = useRef([]);
+    const titleRef = useRef<HTMLHeadingElement>(null);
+    const lettersRef = useRef<Array<HTMLSpanElement | null>>([]);
+
 
     const handleLetters = () => {
         animIn()

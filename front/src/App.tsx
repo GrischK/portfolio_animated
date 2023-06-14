@@ -6,7 +6,7 @@ function App() {
     return (
         <>
             <Home/>
-            <div style={{height:"300vh"}}></div>
+            <div style={{height: "300vh"}}></div>
         </>
     )
 }

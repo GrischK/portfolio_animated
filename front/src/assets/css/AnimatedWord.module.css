@@ -1,22 +1,4 @@
-.header {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    opacity: 0.8;
-}
-
-.home_title_container {
+.animatedWord_title_container {
     text-align: center;
     perspective: 1000px;
     position: absolute;
@@ -24,7 +6,7 @@
     left: 100px;
 }
 
-.home_title {
+.animatedWord_title {
     font-family: var(--font-primary);
     color: white;
     font-size: 15rem;
@@ -33,6 +15,10 @@
     white-space: nowrap;
     margin-top: auto;
     transition: all 2s ease-in-out;
+}
+
+.animatedWord_title span {
+    pointer-events: none;
 }
 
 .dev_title span {

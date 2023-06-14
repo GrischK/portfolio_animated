@@ -55,8 +55,8 @@ export default function AnimatedWord() {
 
 
     return (
-        <div className={styles.home_title_container}>
-            <h1 className={styles.dev_title}
+        <div className={styles.animatedWord_title_container}>
+            <h1 className={styles.animatedWord_title}
                 ref={titleRef}
                 onMouseEnter={handleLetters}
                 onMouseLeave={handleHello}

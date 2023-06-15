@@ -1,5 +1,6 @@
 import './App.css'
-import Home from "./pages/Home.tsx";
+import Hero from "./pages/Hero.tsx";
+import WhoAmI from "./pages/WhoAmI.tsx";
 import Layout from "./components/Layout.tsx";
 import {AnimatePresence} from "framer-motion";
 
@@ -9,8 +10,9 @@ function App() {
         <>
             <AnimatePresence>
                 <Layout>
-                    <Home/>
-                    <div style={{height: "300vh"}}></div>
+                    <Hero/>
+                    <WhoAmI/>
+                    <div style={{height: "200vh"}}></div>
                 </Layout>
             </AnimatePresence>
         </>

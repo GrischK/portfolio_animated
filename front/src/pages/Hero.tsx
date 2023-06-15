@@ -4,7 +4,7 @@ import {animationOne, transition, revealTextFromBottom, revealTransition, animat
 import Dog from "../assets/images/dog.png";
 import Button from "../components/Button.tsx";
 
-export default function Home() {
+export default function Hero() {
     return (
         <div
             className={styles.hero}

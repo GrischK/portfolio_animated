@@ -1,0 +1,58 @@
+.whoAmI_section {
+    display: flex;
+    margin-top: 50vh;
+    height: 500vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.whoAmI_container {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    min-height: 25rem;
+    min-width: 25rem;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.whoAmI_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: scale(var(--scale));
+    border: 2.5rem solid #CEF144;
+    opacity: var(--opacity-border);
+}
+
+.whoAmI_container .firsText {
+    white-space: nowrap;
+    min-width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: calc(-50vw + 25rem);
+    font-size: 23rem;
+    color: white;
+}
+
+.whoAmI_container .secondText {
+    white-space: nowrap;
+    min-width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: calc(-50vw + 25rem);
+    z-index: 11;
+    font-size: 23rem;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.whoAmI_container .thirdText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8.8rem;
+    line-height: 1;
+    color: #fff;
+}

@@ -66,4 +66,6 @@ table {
 :root {
     --font-primary: durer;
     --font-secondary: josefinSans;
+    --scale: 1;
+    --opacity-border: 1;
 }

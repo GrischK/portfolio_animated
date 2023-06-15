@@ -1,19 +1,20 @@
 .whoAmI_section {
     display: flex;
-    margin-top: 50vh;
+    /*margin-top: 50vh;*/
     height: 500vh;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .whoAmI_container {
     position: sticky;
     top: 50%;
-    left: 50%;
-    min-height: 25rem;
-    min-width: 25rem;
-    transform: translate(-50%, -50%);
+    min-height: 50rem;
+    min-width: 50rem;
+    transform: translateY(calc(-47%));
     white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .whoAmI_container::before {
@@ -21,7 +22,7 @@
     position: absolute;
     inset: 0;
     transform: scale(var(--scale));
-    border: 2.5rem solid #CEF144;
+    border: 2.5rem solid #e55942;
     opacity: var(--opacity-border);
 }
 
@@ -56,3 +57,30 @@
     line-height: 1;
     color: #fff;
 }
+
+section .whoAmI_container span:nth-of-type(1) {
+    position: absolute;
+    left: calc(50% * var(--scale) + 50%);
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 25vw;
+    transform-origin: left;
+    transform: scale(var(--scale));
+    background-color: var(--background-black);
+    opacity: var(--opacity-border);
+}
+
+/*section .whoAmI_container span:nth-of-type(2) {*/
+/*    position: absolute;*/
+/*    left: calc(50% * var(--scale) + 50% - (2.5rem * var(--scale)));*/
+/*    top: 0;*/
+/*    z-index: 12;*/
+/*    height: 100%;*/
+/*    width: calc(25rem - 2.5rem);*/
+/*    transform-origin: left;*/
+/*    transform: scale(var(--scale));*/
+/*    border-left-width: 2.5rem;*/
+/*    border-left-color: #CEF144;*/
+/*    opacity: var(--opacity-border);*/
+/*}*/

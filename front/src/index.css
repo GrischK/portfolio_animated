@@ -13,6 +13,14 @@
     font-style: normal;
 }
 
+:root {
+    --font-primary: durer;
+    --font-secondary: josefinSans;
+    --scale: 1;
+    --opacity-border: 1;
+    --background-black: #0D0D0D;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,7 +48,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    background-color: #0D0D0D;
+    background-color: var(--background-black);
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -63,9 +72,3 @@ table {
 }
 
 
-:root {
-    --font-primary: durer;
-    --font-secondary: josefinSans;
-    --scale: 1;
-    --opacity-border: 1;
-}

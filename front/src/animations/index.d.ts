@@ -35,11 +35,27 @@ export const animationTextTwo: {
     };
 };
 
-export const animationLine = {
+export const animationLine: {
     in: {
-        width: number
+        width: number;
     },
     out: {
-        width: toString()
+        width: string;
     },
+}
+
+export const revealTextFromBottom: {
+    hidden: {
+        opacity: number;
+        y: number;
+    },
+    visible: {
+        opacity: number;
+        y: number;
+    },
+}
+
+export const revealTransition: {
+    duration: number;
+    delay: number;
 }

@@ -25,6 +25,10 @@
     font-size: 5rem;
 }
 
+.titleContainer > div {
+    overflow: hidden;
+}
+
 .titleContainer::after {
     content: "";
     display: block;

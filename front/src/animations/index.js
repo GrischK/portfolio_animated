@@ -13,7 +13,7 @@ export const transition = {
 }
 
 export const transitionNavBarLine = {
-    delay: 0.5,
+    delay: 0.75,
     duration: 0.5
 }
 
@@ -44,4 +44,20 @@ export const animationLine = {
         scaleX: 1,
         transformOrigin: '50%',
     },
+}
+
+export const revealTextFromBottom = {
+    hidden: {
+        opacity: 0,
+        y: 275
+    },
+    visible: {
+        opacity: 1,
+        y: 0
+    },
+}
+
+export const revealTransition = {
+    duration: 0.5,
+    delay: 0.10
 }

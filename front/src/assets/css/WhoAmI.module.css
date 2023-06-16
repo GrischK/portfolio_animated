@@ -23,7 +23,6 @@
     inset: 0;
     transform: scale(var(--scale));
     border: 2.5rem solid #e55942;
-    opacity: var(--opacity-border);
 }
 
 .whoAmI_container .firsText {
@@ -48,14 +47,15 @@
     -webkit-text-stroke: 1px white;
 }
 
-.whoAmI_container .thirdText {
+.thirdText {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     font-size: 8.8rem;
     line-height: 1;
     color: #fff;
+    text-align: center;
 }
 
 section .whoAmI_container span:nth-of-type(1) {
@@ -64,7 +64,7 @@ section .whoAmI_container span:nth-of-type(1) {
     top: 0;
     z-index: 10;
     height: 100%;
-    width: 25vw;
+    width: 50vw;
     transform-origin: left;
     transform: scale(var(--scale));
     background-color: var(--background-black);

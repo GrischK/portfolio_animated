@@ -1,7 +1,7 @@
 .whoAmI_section {
     display: flex;
     /*margin-top: 50vh;*/
-    height: 500vh;
+    height: 400vh;
     align-items: center;
     justify-content: center;
 }

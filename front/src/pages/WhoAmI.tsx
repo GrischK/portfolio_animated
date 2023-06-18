@@ -20,11 +20,11 @@ export default function whoAmI() {
 
     const finalTextOpacity = useTransform(
         scrollYProgress,
-        [0.60, 0.61, 0.62, 0.99, 1],
+        [0.60, 0.62, 0.63, 0.69, 0.71],
         [0, 0, 1, 1, 0]
     );
 
-    const finalTextScale = useTransform(scrollYProgress, [0.8, 0.9], [1, 0.7]);
+    const finalTextScale = useTransform(scrollYProgress, [0.63, 0.71], [1, 1.4]);
 
     console.log(scrollYProgress)
     console.log(opacityBorder)
